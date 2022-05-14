@@ -27,7 +27,7 @@ $bundle = Assets::register($this);
 
     <div class="panel-heading clearfix" style="background-color: <?= $this->theme->variable('background-color-secondary') ?>">
         <div style="margin-right:40px;" class="pull-left">
-            <?= Yii::t('GalleryModule.base', '<strong>Gallery</strong> ') . Html::encode($gallery->title) ?>
+            <?= Yii::t('GalleryModule.base', '<strong>Gallery</strong>') . ' ' . Html::encode($gallery->title) ?>
         </div>
 
         <?= GalleryMenu::widget(['gallery' => $gallery,
